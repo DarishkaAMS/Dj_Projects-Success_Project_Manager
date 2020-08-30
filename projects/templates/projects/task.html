@@ -1,0 +1,23 @@
+{% extends "projects/layout.html" %}
+
+{% block body%}
+    <h1>Task {{ task.id }}</h1>
+    <ul>
+        <li> Assign by: {{ task.starting_point }}</li>
+        <li> Manage by: {{ task.goal }}</li>
+        <li> Satisfaction Rate: {{ task.satisfaction_rate }}</li>
+    </ul>
+
+    <h2>Team members</h2>
+    <ul>
+        {% for member in members %}
+            <li> {{member}} </li>
+        {% empty %}
+            <li>No Team Members so far</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Add Team Member</h2>
+    <a href= "{% url 'index' %}">Go Back to Tasks Lists</a>
+
+{% endblock %}

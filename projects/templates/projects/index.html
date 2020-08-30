@@ -1,0 +1,14 @@
+{% extends "projects/layout.html" %}
+
+{% block body%}
+    <h1>Tasks</h1>
+    <ul>
+        {% for task in projects %}
+            <li>
+                <a href="{% url 'task' task.id %}"> 
+                    Task {{ task.id }}: {{ task.starting_point }} to {{ task.goal }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
