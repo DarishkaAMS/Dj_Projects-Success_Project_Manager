@@ -18,6 +18,16 @@
     </ul>
 
     <h2>Add Team Member</h2>
+
+    <form action="{% url 'join' task.id %}" method="post">
+        {% csrf_token %}    
+        <select name="member">
+            {% for member in non_member %}
+                <option value='{{ member.id }}'>{{ member }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit">
+    </form>
     <a href= "{% url 'index' %}">Go Back to Tasks Lists</a>
 
 {% endblock %}
