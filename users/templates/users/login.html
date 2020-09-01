@@ -1,7 +1,22 @@
 {% extends "users/layout.html" %}
 
 {% block body %}
-    {% if message %}
+<style>
+    body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 11px;
+    color: whitesmoke;
+    text-align: center;
+    background-color: rgb(68, 68, 68);
+    }
+</style>
+    <div>
+        <p><h2 style = "color:goldenrod">To visit our site, you must be of legal authorization in your company</h2></p>    
+    </div> 
+    <div>
+        <p><h4>Please provide your credentials</h4></p>
+    </div> 
+{% if message %}
         <div>{{ message }}</div>
     {% endif %}
 

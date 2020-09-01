@@ -1,13 +1,22 @@
 {% extends "users/layout.html" %}
 
 {% block body %}
+<style>
+    body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 11px;
+    color: whitesmoke;
+    background-color: rgb(68, 68, 68);
+    }
+</style>
+    <h1 style = "color:goldenrod">Welcome, {{ request.user.username }}</h1>
 
-    <h1>Welcome, {{ request.user.username }}</h1>
-
-    <ul>
+    <ul style="list-style-type:none;">
         <li>Username: {{ request.user.username }}</li>
         <li>Email: {{ request.user.email }}</li>
     </ul>
 
+
+    
     <a href="{% url 'logout' %}">Log Out</a>
 {% endblock %}
