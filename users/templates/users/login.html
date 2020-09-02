@@ -8,6 +8,7 @@
     color: whitesmoke;
     text-align: center;
     background-color: rgb(68, 68, 68);
+    background-image: url("https://www.hdwallpapers.net/wallpapers/black-waves-wallpaper-for-3840x2160-4k-136-1037.jpg");  
     }
 </style>
     <div>
@@ -22,8 +23,8 @@
 
     <form action="{% url 'login' %}" method="post">
         {% csrf_token %}
-        <input type="text" name="username" placeholder="Username">
-        <input type="password" name="password" placeholder="Password">
+        <input type="text" name="username" placeholder="Username" maxlength = 24 required="required">
+        <input type="password" name="password" placeholder="Password" maxlength = 24 required="required">
         <input type="submit" value="Login">
     </form>
 {% endblock%}

@@ -1,0 +1,18 @@
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 11px;
+    color: whitesmoke;
+    text-align: center;
+    background-image: url('wave.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    }
+
+h1 {
+    color:goldenrod;
+}
+
+ul {
+    list-style-type:none;
+}

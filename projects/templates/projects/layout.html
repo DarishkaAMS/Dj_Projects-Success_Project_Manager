@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>DarishkaAMS TM</title>
+		<title>DarishkaAMS TM</title>
+	{% load static %}
+	<!-- <link rel="stylesheet"  type="text/css" href="{% static mystyle.css %}"> -->
 	<style>
-			body {
-			font-family: "Roboto", Arial, sans-serif;
-			font-size: 11px;
-			color: whitesmoke;
-			text-align: center;
-			background-color: rgb(68, 68, 68);
-			}
+		body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 11px;
+    color: whitesmoke;
+	text-align: center;
+	background-color: rgb(68, 68, 68);
+		}
+</style>
+	<style>
+		body {
+	background-image: url("https://www.hdwallpapers.net/wallpapers/black-waves-wallpaper-for-3840x2160-4k-136-1037.jpg");  
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    }
 	</style>
-
-	</head>
-    <body link="whitesmoke" vlink="goldenrod" alink="#ff0000">
-	<header>
+</head>
+	
+	<body link="whitesmoke" vlink="goldenrod" alink="#ff0000">
 		<div>
 			<h1 style = "color:goldenrod">Welcome to DarishkaAMS Success Project Manager! </h1> 
 		</div>
 <br>
         {% block body%}
         {% endblock %}
+	
 	<footer>
 		<p> We really appreciate your oppinion, so do not hesitate to contact us <address>Kyiv, Ukraine</address></p>
 	</footer>
-    </body>
+	</body>
+	
 </html>
