@@ -123,5 +123,5 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    'D:\DJANGO\success_project_manager\projects\static',
+    'projects/static/',
 ]
