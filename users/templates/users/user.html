@@ -1,15 +1,7 @@
 {% extends "users/layout.html" %}
 
 {% block body %}
-<style>
-    body {
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 11px;
-    color: whitesmoke;
-    background-color: rgb(68, 68, 68);
-    background-image: url("https://www.hdwallpapers.net/wallpapers/black-waves-wallpaper-for-3840x2160-4k-136-1037.jpg");  
-    }
-</style>
+
     <h1 style = "color:goldenrod">Welcome, {{ request.user.username }}</h1>
 
     <ul style="list-style-type:none;">
