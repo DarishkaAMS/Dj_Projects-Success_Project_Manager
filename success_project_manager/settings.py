@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['ec2-13-53-43-79.eu-north-1.compute.amazonaws.com', '127.0.0.1'
 INSTALLED_APPS = [
     'projects',
     'users',
+    'home',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
