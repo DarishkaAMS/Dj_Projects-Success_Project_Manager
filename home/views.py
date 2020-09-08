@@ -4,6 +4,4 @@ from django.shortcuts import render
 from django.urls import reverse
 
 def index(request):
-    return render(request, "projects/index.html", {
-        "projects": Task.objects.all()  
-    })
+    return render(request, "home/homepage.html")
