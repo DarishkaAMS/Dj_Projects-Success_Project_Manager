@@ -2,7 +2,7 @@
 
 {% block body%}
 
-    <h1>Task {{ task.id }}</h1>
+    <h1 style = "color:goldenrod">Task {{ task.id }}</h1>
     <ul style ="list-style-type:none;">
         <li> Assign by: {{ task.starting_point }}</li>
         <li> Manage by: {{ task.goal }}</li>
@@ -10,7 +10,7 @@
         <li> Satisfaction Rate: {{ task.satisfaction_rate }}</li>
     </ul>
 
-    <h2>Team members</h2>
+    <h2 style = "color:goldenrod">Team members</h2>
     <ul style ="list-style-type:none;">
         {% for member in members %}
             <li> {{member}} </li>
@@ -19,7 +19,7 @@
         {% endfor %}
     </ul>
 
-    <h2>Add Team Member</h2>
+    <h2 style = "color:goldenrod">Add Team Member</h2>
 
     <form action="{% url 'join' task.id %}" method="post">
         {% csrf_token %}    
