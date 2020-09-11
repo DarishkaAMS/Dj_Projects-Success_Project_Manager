@@ -11,7 +11,7 @@ class Department(models.Model):
 class Task(models.Model):
     starting_point = models.ForeignKey(Department, on_delete = models.CASCADE, related_name="task_at_hand")
     goal = models.ForeignKey(Department, on_delete=models.CASCADE, related_name="requested_task")
-    satisfaction_rate = models.IntegerField()
+    days_to_complete = models.IntegerField()
 
     def __str__(self):
         return f"{self.starting_point} request for {self.goal}" #{self.id}: 
