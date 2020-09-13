@@ -4,7 +4,7 @@ from .models import Task, Department, TeamMember
 
 # Register your models here.
 class TaskAdmin(admin.ModelAdmin):
-    list_display = ("id", "starting_point", "goal", "days_to_complete")
+    list_display = ("id", "starting_point", "goal", "days_to_complete", "name_task")
 class DepartmentAdmin(admin.ModelAdmin):
     list_display = ("name", "head", "stuff")
 
