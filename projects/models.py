@@ -1,5 +1,7 @@
 from django.db import models
 
+from datetime import datetime 
+
 class Department(models.Model):
     name = models.CharField(max_length=64)   
     head = models.CharField(max_length=64)
@@ -16,6 +18,10 @@ class Task(models.Model):
 
     def __str__(self):
         return f"{self.starting_point} request for {self.goal}" #{self.id}: 
+
+    # def is_deadline(request, task_id):
+    #     time_to_go = datetime.now() > self.days_to_complete
+    #     return time_to_go
 
 class TeamMember(models.Model):
     f_name = models.CharField(max_length=24)

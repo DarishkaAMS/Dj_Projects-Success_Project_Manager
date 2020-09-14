@@ -11,6 +11,28 @@
         <li> Days to Complete: {{ task.days_to_complete }}</li>
     </ul>
 
+    <h3 style = "color:goldenrod">Countdown Clock</h3> 
+    <div id="clockdiv"> 
+      <div> 
+        <span class="days" id="day"></span> 
+        <div class="smalltext">Days</div> 
+      </div> 
+      <div> 
+        <span class="hours" id="hour"></span> 
+        <div class="smalltext">Hours</div> 
+      </div> 
+      <div> 
+        <span class="minutes" id="minute"></span> 
+        <div class="smalltext">Minutes</div> 
+      </div> 
+      <div> 
+        <span class="seconds" id="second"></span> 
+        <div class="smalltext">Seconds</div> 
+      </div> 
+    </div> 
+      
+    <p id="demo"></p> 
+
     <h2 style = "color:goldenrod">Team members</h2>
     <ul style ="list-style-type:none;">
         {% for member in members %}
