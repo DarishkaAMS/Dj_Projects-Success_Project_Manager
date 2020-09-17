@@ -1,4 +1,4 @@
-var deadline = new Date("task.days_to_complete").getTime(); 
+var deadline = new Date("Jan 5, 2021 15:37:25").getTime(); //"task.days_to_complete"
   
 var x = setInterval(function() { 
   
